@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Get Git stuvv') {
       steps {
-        git 'https://github.com/Dompatchi/stuff.git'
+        git(url: 'https://github.com/Dompatchi/stuff.git', branch: 'master')
       }
     }
     stage('But how are he do it') {
